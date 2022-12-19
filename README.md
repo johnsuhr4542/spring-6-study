@@ -50,6 +50,9 @@
   * 스프링 시큐리티는 서블릿에 도달하기 전, 필터를 등록하여 일괄적으로 요청에 대한 인증/인가 처리를 하게 된다.
   * 서블릿 필터에서 스프링 빈을 참조하기 위해서 `DelegatingFilterProxy`를 사용하게 된다.
   * 시큐리티 필터 목록은 [여기](https://docs.spring.io/spring-security/reference/servlet/architecture.html#servlet-security-filters)를 참고한다.
+  * `SecurityContextPersistenceFilter`
+    * 현재 요청의 `SecurityContext`를 불러와서 `SecurityContextHolder`라는 쓰레드간 공유 가능한 저장소에 저장하여 이후 어디서든 참조 가능하게 해 준다.
+    * 현재 요청의 `SecurityContext`가 변경되는 경우(로그인, 로그아웃 등), 변경 사항을 `SecurityContextRepository`에 저장한다.
 </details>
 
 ### 인증(Authentication)
