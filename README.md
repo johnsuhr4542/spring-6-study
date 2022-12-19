@@ -12,7 +12,6 @@
 * `Spring Web MVC`
 * `Spring Security 6`
 * `Spring Data JPA`
-* `Thymeleaf`
 
 ## 학습
 ### Spring Web MVC
