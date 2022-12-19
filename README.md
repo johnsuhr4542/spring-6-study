@@ -1,9 +1,9 @@
 1. [서론](#서론)
 2. [사용 모듈](#사용-모듈)
-3. [학습](#학습)
-  3-1. [Spring Web MVC](#Spring-Web-MVC)
-  3-2. [Spring Security 6](#Spring-Security-6)
-  3-3. [Spring Data JPA](#Spring-Data-JPA)
+3. [학습](#학습)  
+  3-1. [Spring Web MVC](#Spring-Web-MVC)  
+  3-2. [Spring Security 6](#Spring-Security-6)  
+  3-3. [Spring Data JPA](#Spring-Data-JPA)  
 
 ## 목적
 * `Spring Framework 6`(`Springboot 3`) 및 관련 모듈을 사용하여 스프링 프레임워크의 사용법을 익힌다.
