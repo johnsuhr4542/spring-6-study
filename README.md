@@ -34,6 +34,7 @@
 <summary>오류 처리 펼치기/접기</summary>
 
 * TODO
+
 </details>
 
 ## Spring Security
@@ -41,7 +42,9 @@
 <details>
 <summary>스프링 시큐리티 구조 펼치기/접기</summary>
 
-* TODO
+<img width="360px" src="https://user-images.githubusercontent.com/48673909/208333830-26cb6bbb-e220-450f-8f79-e08b8995e8f3.png" alt="filterchainproxy"><br>
+  
+* 위 그림은 스프링 시큐리티의 구조를 간단히
 </details>
 
 ### 인증(Authentication)
