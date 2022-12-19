@@ -46,10 +46,9 @@
   </p>
   
   * 위 그림은 스프링 시큐리티의 구조를 간단히 나타낸 것이다.
-  * `HTTP` 요청이 발생하게 되면 서블릿 컨테이너(톰캣, 언더토 등)는 `HttpServletRequest`의 구현체로 변환한 뒤 등록된 필터를 통해 최종적으로 서블릿(스프링의 `DispatcherServlet`)에 전달하게 된다.
+  * `HTTP` 요청이 발생하게 되면 서블릿 컨테이너(톰캣, 언더토 등)는 `HttpServletRequest`의 구현체로 변환한 뒤 등록된 필터를 거쳐 최종적으로 서블릿(스프링의 `DispatcherServlet`)에 전달하게 된다.
   * 스프링 시큐리티는 서블릿에 도달하기 전, 필터를 등록하여 일괄적으로 요청에 대한 인증/인가 처리를 하게 된다.
-  * 일반적으로 스프링 애플리케이션은 서블릿 컨텍스트가 구성된 후에 생성되기 때문에 스프링이 생성된기 전, 서블릿 필터에서 스프링 애플리케이션을 호출할 수 없다.
-  * 따라서 스프링 애플리케이션을 참조하는 서블릿 필터를 등록하기 위해서는 `DelegatingFilterProxy`라는 것을 사용하게 된다.
+  * 서블릿 필터에서 스프링 빈을 참조하기 위해서 `DelegatingFilterProxy`를 사용하게 된다.
   * 시큐리티 필터 목록은 [여기](https://docs.spring.io/spring-security/reference/servlet/architecture.html#servlet-security-filters)를 참고한다.
 </details>
 
