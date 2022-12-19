@@ -2,7 +2,7 @@
 2. [사용 모듈](#사용-모듈)
 3. [학습](#학습)  
   3-1. [Spring Web MVC](#Spring-Web-MVC)  
-  3-2. [Spring Security 6](#Spring-Security-6)  
+  3-2. [Spring Security 6](#Spring-Security)  
   3-3. [Spring Data JPA](#Spring-Data-JPA)  
 
 ## 목적
@@ -10,13 +10,13 @@
 
 ## 사용 모듈
 * `Spring Web MVC`
-* `Spring Security 6`
+* `Spring Security`
 * `Spring Data JPA`
 
 ## 학습
 ### Spring Web MVC
 * TODO
-### Spring Security 6
+### Spring Security
 * TODO
 ### Spring Data JPA
 * TODO
