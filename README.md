@@ -41,10 +41,13 @@
 ### 스프링 시큐리티 구조
 <details>
 <summary>스프링 시큐리티 구조 펼치기/접기</summary>
-
-<img width="360px" src="https://user-images.githubusercontent.com/48673909/208333830-26cb6bbb-e220-450f-8f79-e08b8995e8f3.png" alt="filterchainproxy"><br>
+  <p align="center">
+    <img width="400" src="https://user-images.githubusercontent.com/48673909/208333830-26cb6bbb-e220-450f-8f79-e08b8995e8f3.png" alt="filterchainproxy">
+  </p>
   
-* 위 그림은 스프링 시큐리티의 구조를 간단히
+  * 위 그림은 스프링 시큐리티의 구조를 간단히 나타낸 것이다.
+  * `HTTP` 요청이 발생하게 되면 서블릿 컨테이너(톰캣, 언더토 등)는 `HttpServletRequest`의 구현체로 변환한 뒤 등록된 필터를 통해 최종적으로 서블릿(스프링의 `DispatcherServlet`)에 전달하게 된다.
+  * 스프링 시큐리티는 서블릿에 도달하기 전, 필터를 등록하여 일괄적으로 요청에 대한 인증/인가 처리를 하게 된다.
 </details>
 
 ### 인증(Authentication)
