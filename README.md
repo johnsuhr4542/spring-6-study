@@ -2,7 +2,7 @@
 2. [사용 모듈](#사용-모듈)
 3. [학습](#학습)  
   3-1. [Spring Web MVC](#Spring-Web-MVC)  
-  3-2. [Spring Security 6](#Spring-Security)  
+  3-2. [Spring Security](#Spring-Security)  
   3-3. [Spring Data JPA](#Spring-Data-JPA)  
 
 ## 목적
